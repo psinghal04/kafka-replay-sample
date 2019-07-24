@@ -1,0 +1,8 @@
+{
+  "broker-host-endpoint": "localhost:9092",
+  "consumer-group": "replay-group",
+  "topic": "casenetNextGen",
+  "replay-mode": true,
+  "replay-type": "timestamp",
+  "replay-from": "2019-07-17T14:59:05Z"
+}
