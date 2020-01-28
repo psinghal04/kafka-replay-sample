@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	"kafka-replay/config"
 	"log"
 	"time"
+
+	"kafka-replay-sample/config"
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 )
@@ -57,7 +58,7 @@ func main() {
 	value := "Test is a test message. It was produced at " + time.Now().String()
 	p.ProduceChannel() <- &kafka.Message{TopicPartition: kafka.TopicPartition{Topic: &topic, Partition: kafka.PartitionAny}, Value: []byte(value)}
 	// wait for delivery report goroutine to finish
-	log.Println("waiting for resonse on delivery channel...")
+	log.Println("waiting for response on delivery channel...")
 	_ = <-doneChan
 
 	p.Close()

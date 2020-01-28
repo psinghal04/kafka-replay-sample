@@ -6,10 +6,11 @@ import (
 	"os/signal"
 	"syscall"
 
-	"kafka-replay/config"
 	"log"
 	"strconv"
 	"time"
+
+	"kafka-replay-sample/config"
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 )

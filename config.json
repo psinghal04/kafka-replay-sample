@@ -3,6 +3,6 @@
   "consumer-group": "replay-group",
   "topic": "replay-topic",
   "replay-mode": true,
-  "replay-type": "timestamp",
-  "replay-from": "2019-07-17T14:59:05Z"
+  "replay-type": "beginning",
+  "replay-from": "2020-01-28T17:33:05Z"
 }
